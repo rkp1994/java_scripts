@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>java script function example</title>
+  </head>
+  <body>
+    <script src="function.js"></script>
+    <h2>The function called from the other .js file</h2>
+    <h3>External java Script</h3>
+    <p id="id1">This will be changed after clicking the button below</p>
+    <button type="button" name="button" onclick="myFunction()">call the function</button>
+
+  </body>
+</html>
+
+
+/**
+function.js file content
+
+
+
+function myFunction()
+{
+  document.getElementById('id1').innerHTML="This routine has been called from the differnt java script page";
+}
+
+*****/
