@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>for_each</title>
+  </head>
+  <body>
+    <h2>The use of the forach Function for the printing the element of the Array</h2>
+  <p id='demo'></p>
+  <script type="text/javascript">
+    //script for the implementation of the forEach function for the array
+    var person=["Ilon Mask", "jack Ma", "Philip Knight","Mahatma Gandhi"];
+    var text;
+    text="<ul>";
+      person.forEach(myFunction);
+      text+="</ul>";
+    function myFunction(value)
+    {
+      text+="<li>"+value+"</li>";
+    }
+    document.getElementById("demo").innerHTML=text;
+  </script>
+  </body>
+</html>
