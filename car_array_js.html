@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>array implementation</title>
+  </head>
+  <body>
+    <h2>java ascript Array</h2>
+    <p id="demo"></p>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <script type="text/javascript">
+      var cars=["BMW","Skoda","Maruti","Suzuki","Tesla","Land Rower"];
+      document.getElementById("demo").innerHTML=cars;
+      document.getElementById("id1").innerHTML="The Number of the Elements in the array car is:- "+cars.length;
+
+      var array_length,i,result;
+      array_length=cars.length;
+      result="<ul>";
+      for(i=0;i<array_length;i++)
+      {
+        result+="<li>"+cars[i]+"</li>";
+      }
+      result=result+"</ul>";
+
+      document.getElementById("id2").innerHTML=result;
+    </script>
+  </body>
+</html>
+<!--
+<html>
+<body>
+
+<p>Click the button to create an array, then display its length.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo").innerHTML = fruits.length;
+}
+</script>
+
+</body>
+</html>
+-->
