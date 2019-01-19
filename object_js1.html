@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>js object</title>
+  </head>
+  <body>
+    <h1>The java script object implementation</h1>
+    <p id='id1'></p>
+    <p id='id2'></p>
+    <script type="text/javascript">
+      //creating an object
+     var person={
+       firstName: "Ranjeet",
+       lastName: "Patel",
+       age: '24',
+       sex: "Male",
+       status: "Single"
+     };
+
+     document.getElementById("id1").innerHTML=person.firstName + " is " + person.age +" years old";
+     document.getElementById("id2").innerHTML=person.firstName + " status is " + person.status;
+    </script>
+  </body>
+</html>
