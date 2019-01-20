@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Getter_Setter</title>
+  </head>
+  <body>
+    <h2>Getter and Setter in javascrpt</h2>
+    <p id='demo'></p>
+    <script type="text/javascript">
+      var counter={
+          count: 0,
+        get reset()
+        {
+          this.count=0
+        },
+        get increment()
+        {
+          this.count++;
+        },
+        get decrement()
+        {
+          this.count--;
+        },
+        set add(value)
+        {
+          this.count+=value;
+        },
+        set substract(value)
+        {
+          this.count-=value;
+        }
+      };
+      counter.reset;
+      counter.add=10;
+      counter.substract=1;
+      counter.increment;
+      counter.increment;
+      counter.decrement;
+      counter.decrement;
+      document.getElementById('demo').innerHTML="The Value of the counter now is:- "+counter.count;
+    </script>
+    <h3>End of the script</h3>
+  </body>
+</html>
